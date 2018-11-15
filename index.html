@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume-Maker</title>
+  <script type="text/javascript" src="x.js"></script>
+  <script type="text/javascript" src="mainn.js"></script>
+  <style>
+    .table-borders{
+      border:2px solid black;
+      padding: 5px;
+    }
+    div.main{
+      border: 1px solid black;
+      padding: 5px 10px 5px 10px;
+    }
+    h3{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<b>Fill all the fields before clicking generate button</b>
+  <div style="margin:0px auto;" class="">
+    <div>
+      <input required type="text" id="name" placeholder="Your Name in Caps">
+      
+    </div>
+
+    <div>
+      <h3>Contact info</h3>
+      Phone: <input required type="number" id="phone" placeholder="mobile"><br><br>
+      Email: <input required type="Email" id="email" placeholder="email id">
+    </div>
+
+    <div>
+      <h3>Education</h3>
+
+      <table class="table-borders">
+        <tr class="table-borders">
+          <th class="table-borders">Degree Name</th>
+          <th class="table-borders">From</th>
+          <th class="table-borders">Marks</th>
+        </tr>
+
+        <tr class="table-borders">
+          <td class="table-borders">
+            BTECH CSE
+          </td>
+          <td class="table-borders">
+            GJUS&T, Hisar
+          </td>
+          <td class="table-borders">
+            <input required type="number" id="cgpa" placeholder="cgpa">
+          </td>
+        </tr>
+
+        <tr class="table-borders">
+          <td class="table-borders">
+            12th
+          </td>
+          <td class="table-borders">
+            <input required type="text" id="twelveth" placeholder="School for 12th">
+          </td>
+          <td class="table-borders">
+            <input required type="text" id="percentone" placeholder="12th percentage">
+
+          </td>
+        </tr>
+
+        <tr class="table-borders">
+          <td class="table-borders">
+            10th
+          </td>
+          <td class="table-borders">
+            <input required type="text" id="tenth" placeholder="School for 10th">
+          </td>
+          <td class="table-borders">
+           <input required type="text" id="percenttwo" placeholder="10th percentage">
+
+          </td>
+        </tr>
+      </table>
+      <br>
+    </div>
+
+
+    <div>
+      <h3>Skills</h3>
+      <ul>
+        <li>Intermidiate</li>
+        <p><input style="min-width:350px;" required type="text" id="skillsinter" placeholder="separate them with comma"></p>
+        <li>Advanced</li>
+        <p><input style="min-width:350px;" required type="text" id="skillsadv" placeholder="separate them with comma"></p>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Work Experience</h3>
+      <ul>
+        <li><input style="min-width:350px;" required type="text" id="wone" placeholder="some text here"></li>
+        <li><input style="min-width:350px;" required type="text" id="wtwo" placeholder="some text here"></li>
+      </ul>
+    </div>
+  </div>
+  <input id="generate" type="button" onclick="run()" value="Generate resume"></input>
+</body>
+</html>
